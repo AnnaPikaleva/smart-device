@@ -1,0 +1,31 @@
+.navigation-footer__wrapper button {
+  display: none;
+}
+
+.navigation-footer__wrapper h2 {
+  margin: 10px 0 22px 5px;
+  font-family: $ff-roboto;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.navigation-footer__wrapper div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-footer__wrapper ul {
+  margin-left: 5px;
+  margin-right: 40px;
+}
+
+.navigation-footer__wrapper li {
+  margin-bottom: 10px;
+}
+
+.navigation-footer__wrapper a {
+  color: $color-default-white-opacity;
+}

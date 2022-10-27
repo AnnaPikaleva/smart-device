@@ -1,0 +1,54 @@
+.about-company__container {
+  position: relative;
+  padding-left: 255px;
+  width: calc(64% - 255px);
+  margin-bottom: 120px;
+
+  &::after {
+    content: "";
+    background-image: url(../../img/2022.png);
+    width: 150px;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.about-company__container h2 {
+  margin: 0;
+  font-family: $ff-roboto;
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 15px;
+}
+
+.about-company__container p {
+  margin-bottom: 44px;
+
+  &:first-of-type {
+    margin-bottom: 20px;
+  }
+
+  &:last-of-type {
+    display: none;
+  }
+}
+
+.about-company__container a {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid $color-light-blue;
+  border-radius: 3px;
+  color:  $color-light-blue;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 14px 13px 8px 12px;
+  width: 155px;
+  text-transform: uppercase;
+}

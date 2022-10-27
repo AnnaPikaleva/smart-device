@@ -4,10 +4,19 @@
 // Default
 
 $color-default-black:               #000000;
-$color-default-white:               #ffffff;
+$background-default-color:          #f8fdff;
 $color-transparent:                 rgba(255, 255, 255, 0);
 $background-color-dark:             #041827;
 $color-font-light:                  #f2f5f7;
+$color-light-blue:                  #00b2ff;
+$color-light-grey:                  #ebebeb;
+$color-hover:                       #f2f5f6;
+$color-default-white:               #ffffff;
+$color-background-field:            rgba(4, 20, 39, 0.15);
+$color-dark-blue:                   #041427;
+$color-default-white-opacity:       rgba(255, 255, 255, 0.7);
+$background-color-modal:            rgba(3, 16, 27, 0.7);
+$modal-window-background:           #00b3ff;
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -19,18 +28,10 @@ $color-torch-red:                   #ff1553;
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
-// Typography
-// ---------------------------------
-
-// переменная используемая в html для подключения скейлинга
-$fz-default:                        16px;
-
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-ptmono:                         "PT Mono", "Arial", sans-serif;
 $ff-roboto:                         "Roboto Condensed", "Arial", sans-serif;
-
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -50,12 +51,4 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
-$vp-1280:                           1280px;
-$vp-1440:                           1440px;
 $vp-1920:                           1920px;
-
-// Retina
-// ---------------------------------
-
-$retina-dpi:                        144dpi;
-$retina-dppx:                       1.5dppx;

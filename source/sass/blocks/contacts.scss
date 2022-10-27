@@ -1,0 +1,33 @@
+.contacts__wrapper button {
+  display: none;
+}
+
+.contacts__wrapper {
+  margin-right: 40px;
+}
+
+.contacts__wrapper h2 {
+  margin: 10px 0 22px 5px;
+  font-family: $ff-roboto;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contacts__wrapper address {
+  font-style: normal;
+}
+
+.contacts__wrapper p {
+  margin-bottom: 11px;
+}
+
+.contacts__wrapper li {
+  margin-bottom: 10px;
+}
+
+.contacts__wrapper a {
+  color: $color-default-white-opacity;
+}

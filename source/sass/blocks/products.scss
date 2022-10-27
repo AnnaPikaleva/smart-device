@@ -1,0 +1,75 @@
+.products {
+  color: $color-default-white;
+  background-color: $background-color-dark;
+  min-height: 960px;
+}
+
+.products__container {
+  padding-top: 70px;
+}
+
+.products__container h3 {
+  color: $color-default-white;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.products__container p {
+  font-family: $ff-roboto;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 50px;
+}
+
+.products__container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__item {
+  cursor: pointer;
+  position: relative;
+  width: 29%;
+  min-height: 650px;
+  background-image: url(../../img/bacground-card-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--card2 {
+    background-image: url(../../img/bacground-card-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--card3 {
+    background-image: url(../../img/bacground-card-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.products__container button {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  width: 60px;
+  height: 60px;
+  background-color: $color-light-blue;
+  border: none;
+  border-radius: 3px 0px 0px 0px;
+  background-image: url(../../img/svg/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4px 8px;
+  cursor: pointer;
+}

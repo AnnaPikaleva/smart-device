@@ -1,0 +1,40 @@
+.advantages__container {
+  padding-top: 120px;
+  margin-bottom: 120px;
+}
+
+.advantages__container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 48.5%);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 31px;
+  row-gap: 29px;
+}
+
+.advantages__container li {
+  align-items: center;
+  border: 1px solid $color-light-grey;
+  border-left: 5px solid $color-light-blue;
+  box-sizing: border-box;
+  padding: 95px 45px 55px 45px;
+
+  &:hover {
+    background-color: $color-light-blue;
+  }
+}
+
+.advantages__container h3 {
+  margin: 0;
+  font-family: $ff-roboto;
+  font-size: 24px;
+  line-height: 140%;
+  color: $color-light-blue;
+  margin-bottom: 15px;
+}
+
+.advantages__container p {
+  color: $background-color-dark;
+}
