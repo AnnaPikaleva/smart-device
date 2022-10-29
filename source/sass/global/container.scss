@@ -20,4 +20,12 @@
 .container {
   width: 64%;
   margin: 0 auto;
+
+  @media (max-width: $vp-1023) {
+    width: 87%;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 84%;
+  }
 }

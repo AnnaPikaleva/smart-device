@@ -13,6 +13,27 @@
     top: 0;
     left: 0;
   }
+
+  @media (max-width: $vp-1023) {
+    width: calc(87% - 176px);
+    padding-left: 176px;
+    margin-bottom: 80px;
+
+    &::after {
+      top: 4px;
+      left: -3px;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    width: 84%;
+    padding-left: 0;
+    padding-top: 28px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .about-company__container h2 {
@@ -21,17 +42,60 @@
   font-size: 36px;
   line-height: 50px;
   margin-bottom: 15px;
+  font-weight: 400;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: -3px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 28px;
+    line-height: 140%;
+  }
 }
 
 .about-company__container p {
-  margin-bottom: 44px;
-
   &:first-of-type {
     margin-bottom: 20px;
   }
 
   &:last-of-type {
     display: none;
+  }
+
+  &:nth-of-type(3n) {
+    margin: 0;
+    margin-top: -18px;
+  }
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 21px;
+
+    &:first-of-type {
+      margin-bottom: 25px;
+    }
+
+    &:nth-of-type(3n) {
+      margin-top: -21px;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 134%;
+    // margin-bottom: 14px;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about-company__container .about-company__text {
+  @media (max-width: $vp-767) {
+    &--closed {
+      display: none;
+    }
   }
 }
 
@@ -51,4 +115,17 @@
   padding: 14px 13px 8px 12px;
   width: 155px;
   text-transform: uppercase;
+  margin-top: 44px;
+
+  @media (max-width: $vp-1023) {
+    padding: 14px 11px 11px;
+    margin-top: 21px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 15px 10px;
+    width: 128px;
+  }
 }

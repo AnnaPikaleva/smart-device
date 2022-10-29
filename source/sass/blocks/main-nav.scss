@@ -1,0 +1,47 @@
+.main-nav {
+  width: 67.6%;
+
+  @media (max-width: $vp-1023) {
+    width: 9%;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 23%;
+  }
+}
+
+.main-nav__mail-link {
+  margin-left: -20px;
+
+  @media (max-width: $vp-1023) {
+    padding: 0;
+  }
+}
+
+.main-nav span {
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
+}
+
+.main-nav__phone {
+  margin-left: -45px;
+
+  @media (max-width: $vp-1023) {
+    padding: 0;
+  }
+}
+
+.main-nav__button-link {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  border: 1px solid $color-font-light;
+  padding: 10px 15px;
+  margin-right: 65px;
+
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
+}
