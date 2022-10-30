@@ -2,14 +2,29 @@
   min-height: 671px;
   padding-top: 170px;
   background-color: $color-light-blue;
-  background-image: url("../../img/paper-airplane.png");
-  background-repeat: no-repeat;
-  background-position: 25% 44%;
+  position: relative;
+  z-index: -1;
+
+  &::before {
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-color: $backgroundcolor-feedback-polygon;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 51% 0, 0 100%);
+    z-index: -1;
+  }
 
   @media (max-width: $vp-1023) {
     background-image: none;
     padding-top: 0;
     min-height: 580px;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (max-width: $vp-767) {
@@ -25,9 +40,23 @@
   flex-direction: column;
   color: $color-default-white;
 
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/paper-airplane.png");
+    width: 510px;
+    height: 285px;
+    top: 19%;
+    left: 0;
+  }
+
   @media (max-width: $vp-1023) {
     padding: 0;
     padding-top: 45px;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (max-width: $vp-767) {

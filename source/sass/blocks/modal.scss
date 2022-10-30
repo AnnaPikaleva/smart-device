@@ -3,22 +3,71 @@
   z-index: 20;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: $background-color-modal;
+  background-color: $background-color-modal-opacity;
 
-  &--close {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
     display: none;
+  }
+
+  &--no-scale {
+    transform: none;
+  }
+
+  &--preload {
+    transition: none;
   }
 }
 
 .modal__wrapper {
   position: relative;
-  margin: auto;
-  padding: 40px;
-  background-color: $modal-window-background;
   width: 26%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 60px 40px;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.modal__content {
+  position: relative;
+
+  width: 26%;
+  padding: 40px;
+
+  background-color: $modal-window-background-blue;
+
+  // @include vp-767 {
+  //   width: 100%;
+  //   padding: 20px;
+  // }
 }
 
 .modal__wrapper h2 {
@@ -156,4 +205,13 @@
   top: 15px;
   right: 15px;
   cursor: pointer;
+  z-index: 1;
+}
+
+.modal.is-active {
+  // transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+
+  pointer-events: auto;
 }
