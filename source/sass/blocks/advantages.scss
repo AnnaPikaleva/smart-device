@@ -48,6 +48,11 @@
     background-color: $color-light-blue;
   }
 
+  &:hover h3,
+  &:hover p {
+    color: $color-font-light;
+  }
+
   @media (max-width: $vp-1023) {
     padding: 90px 45px 30px 40px;
   }

@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {readMore} from './modules/openblock.js';
+import {moveToForm} from './modules/app.js';
+import {openList} from './modules/accordion.js';
 
 // ---------------------------------
 
@@ -11,6 +14,12 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+  document.getElementById('toggler').addEventListener('click', () => {
+    readMore();
+  });
+  moveToForm();
+  readMore();
+  openList();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -18,6 +27,50 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
   });
+});
+
+// Focus
+
+document.querySelector('.main-nav__button-link').addEventListener('click', function () {
+  setTimeout(() => {
+    document.querySelector('#customer-name').focus();
+  }, 100);
+});
+
+// Phone
+
+document.addEventListener('DOMContentLoaded', () => {
+  const element = document.getElementById('tel');
+  if (!element) {
+    return;
+  }
+  const maskOptions = {
+    mask: '+{7}(000)000-00-00',
+  };
+  IMask(element, maskOptions);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const element = document.getElementById('phone-number');
+  if (!element) {
+    return;
+  }
+  const maskOptions = {
+    mask: '+{7}(000)000-00-00',
+  };
+  IMask(element, maskOptions);
+});
+
+// Validate form
+
+let form = document.querySelector('[data-form]');
+console.log(form);
+const validateButton = document.querySelector('[data-button]');
+console.log(validateButton);
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  console.log('Clic');
 });
 
 // ---------------------------------
@@ -44,3 +97,15 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+// const buttonToForm = document.querySelector('.main-page__container > a');
+// // console.log(buttonToForm);
+// const form = document.querySelector('form');
+// // console.log(form);
+
+// buttonToForm.addEventListener('click', () => {
+//   form.scrollIntoView({
+//     block: 'nearest',
+//     behavior: 'smooth',
+//   });
+// });

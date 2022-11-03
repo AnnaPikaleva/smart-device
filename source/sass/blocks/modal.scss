@@ -1,22 +1,48 @@
 .modal {
+  // position: fixed;
+  // z-index: 20;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // display: flex;
+  // width: 100%;
+  // height: 100%;
+  // background-color: $background-color-modal-opacity;
+
+  // display: flex;
+  // flex-direction: column;
+  // overflow-y: auto;
+  // -webkit-overflow-scrolling: touch;
+
+  // visibility: hidden;
+  // opacity: 0;
+  // pointer-events: none;
+
+  // -ms-overflow-style: none;
+  // scrollbar-width: none;
+
   position: fixed;
-  z-index: 20;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: $background-color-modal-opacity;
+  left: 0;
+  z-index: 1000;
 
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
+  background-color: rgba($color-default-black, 0.8);
+  transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
+
+  transition: opacity $trans-modal,
+    transform $trans-modal,
+    visibility $trans-modal;
+
   pointer-events: none;
 
   -ms-overflow-style: none;
@@ -33,6 +59,22 @@
   &--preload {
     transition: none;
   }
+
+  // &--responsive {
+  //   .modal__content {
+  //     width: 100%;
+  //   }
+  // }
+
+  // &--fit-content {
+  //   .modal__content {
+  //     width: auto;
+
+  //     @include vp-767 {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }
 
 .modal__wrapper {

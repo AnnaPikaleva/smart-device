@@ -3,7 +3,6 @@
   padding-top: 170px;
   background-color: $color-light-blue;
   position: relative;
-  z-index: -1;
 
   &::before {
     content: "";
@@ -14,7 +13,6 @@
     top: 0;
     left: 0;
     clip-path: polygon(0 0, 51% 0, 0 100%);
-    z-index: -1;
   }
 
   @media (max-width: $vp-1023) {
@@ -34,7 +32,7 @@
 
 .feedback-form__container {
   position: relative;
-  width: calc(64% - 630px);
+  width: calc(87% - 630px);
   padding-left: 630px;
   display: flex;
   flex-direction: column;
@@ -48,6 +46,10 @@
     height: 285px;
     top: 19%;
     left: 0;
+  }
+
+  @media (min-width: $vp-1600) {
+    width: calc(64% - 630px);
   }
 
   @media (max-width: $vp-1023) {

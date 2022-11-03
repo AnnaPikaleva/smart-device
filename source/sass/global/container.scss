@@ -18,8 +18,12 @@
 // }
 
 .container {
-  width: 64%;
+  width: 87%;
   margin: 0 auto;
+
+  @media (min-width: $vp-1600) {
+    width: 64%;
+  }
 
   @media (max-width: $vp-1023) {
     width: 87%;

@@ -29,7 +29,9 @@
 }
 
 .contacts__wrapper {
-  margin-right: 40px;
+  // margin-right: 40px;
+  // display: flex;
+  // flex-direction: column;
 
   @media (max-width: $vp-1023) {
     margin-right: 13px;
@@ -63,6 +65,7 @@
 
 .contacts__wrapper address {
   font-style: normal;
+
 }
 
 .contacts__wrapper p {
@@ -94,6 +97,10 @@
 .contacts__container {
   width: auto;
   margin: 0;
+
+  @media (min-width: $vp-1600) {
+    width: auto;
+  }
 
   @media (max-width: $vp-1023) {
     width: 100%;

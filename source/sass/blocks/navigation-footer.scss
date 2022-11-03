@@ -2,6 +2,7 @@
   @media (max-width: $vp-767) {
   position: relative;
   padding-top: 21px;
+  padding-bottom: 1px;
 
     &::before,
     &::after {
@@ -31,9 +32,6 @@
     top: 21px;
     right: 25px;
     background-color: transparent;
-    // border: none;
-    width: 15px;
-    height: 15px;
   }
 }
 
@@ -56,10 +54,14 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: $vp-1023) {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+  // @media (max-width: $vp-1023) {
+  //   flex-direction: column;
+  //   justify-content: flex-start;
+  // }
+
+  // @media (max-width: $vp-767) {
+  //   display: none;
+  // }
 }
 
 .navigation-footer__wrapper ul {

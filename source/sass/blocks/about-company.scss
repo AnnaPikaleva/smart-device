@@ -1,7 +1,7 @@
 .about-company__container {
   position: relative;
   padding-left: 255px;
-  width: calc(64% - 255px);
+  width: calc(87% - 255px);
   margin-bottom: 120px;
 
   &::after {
@@ -12,6 +12,10 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  @media (min-width: $vp-1600) {
+    width: calc(64% - 255px);
   }
 
   @media (max-width: $vp-1023) {
@@ -115,7 +119,7 @@
   padding: 14px 13px 8px 12px;
   width: 155px;
   text-transform: uppercase;
-  margin-top: 44px;
+  margin-top: 26px;
 
   @media (max-width: $vp-1023) {
     padding: 14px 11px 11px;
