@@ -29,10 +29,6 @@
 }
 
 .contacts__wrapper {
-  // margin-right: 40px;
-  // display: flex;
-  // flex-direction: column;
-
   @media (max-width: $vp-1023) {
     margin-right: 13px;
   }
@@ -45,7 +41,7 @@
 }
 
 .contacts__wrapper h2 {
-  margin: 10px 0 22px 5px;
+  margin: 1px 0 22px -5px;
   font-family: $ff-roboto;
   font-size: 15px;
   line-height: 16px;

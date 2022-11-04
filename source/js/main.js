@@ -18,7 +18,6 @@ window.addEventListener('DOMContentLoaded', () => {
     readMore();
   });
   moveToForm();
-  readMore();
   openList();
   // ---------------------------------
 
@@ -62,52 +61,44 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Validate form
+
 const reg = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
 
-let form = document.querySelector('[data-form]');
-console.log(form);
-const validateButton = document.querySelector('[data-button]');
-console.log(validateButton);
+const form = document.querySelector('[data-form]');
 const phone = document.querySelector('[data-tel]');
-const customerName = document.querySelector('[data-user-name]');
-const fields = document.querySelectorAll('.field');
 
 const generateError = function (text) {
-  let error = document.createElement('div');
-  error.className = 'error';
-  error.style.color = 'red';
+  let error = document.createElement('span');
+  error.className = 'feedback-form__error';
+  error.style.color = 'brown';
   error.innerHTML = text;
   return error;
 };
 
 const removeValidation = function () {
-  let errors = form.querySelectorAll('.error');
+  let errors = document.querySelectorAll('.error');
   for (let j = 0; j < errors.length; j++) {
     errors[j].remove();
   }
 };
 
-// const checkFields = function () {
-//   for (let i = 0; i < fields.length; i++) {
-//     if (!fields[i].value) {
-//       let error = generateError('Ошибка');
-//       form[i].parentElement.insertBefore(error, fields[i]);
-//     }
-//   }
-// };
-
 const checkPhoneMatch = function () {
   if (!reg.test(phone.value)) {
-    let error = generateError('Не верный формат телефона');
+    let error = generateError('Формат +7(000)000-00-00');
     phone.parentElement.insertBefore(error, phone);
+    return false;
+  } else {
+    return true;
   }
 };
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
   removeValidation();
-  // checkFields();
-  checkPhoneMatch();
+  const valid = checkPhoneMatch();
+  if (valid) {
+    form.submit();
+  }
 });
 
 // ---------------------------------

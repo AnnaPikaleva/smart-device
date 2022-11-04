@@ -1,15 +1,22 @@
-.advantages__container {
-  padding-top: 120px;
-  margin-bottom: 120px;
+.advantages {
+  padding: 120px 0 60px;
 
   @media (max-width: $vp-1023) {
     padding-top: 80px;
-    margin-bottom: 76px;
   }
 
   @media (max-width: $vp-767) {
-    padding-top: 50px;
+    padding: 50px 0 40px;
     margin-bottom: 20px;
+  }
+}
+
+.advantages__container {
+  margin: 0 auto;
+  width: 64%;
+
+  @media (max-width: $vp-1600) {
+    width: 87%;
   }
 }
 

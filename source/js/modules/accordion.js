@@ -20,5 +20,4 @@ function clickButton(element) {
   element.nextElementSibling.style.display = 'block';
 }
 
-
 export {openList};

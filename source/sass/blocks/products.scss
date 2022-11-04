@@ -5,11 +5,17 @@
 }
 
 .products__container {
+  width: 64%;
+  margin: 0 auto;
   padding-top: 70px;
+
+  @media (max-width: $vp-1600) {
+    width: 87%;
+  }
 
   @media (max-width: $vp-1023) {
     padding-top: 55px;
-    padding-bottom: 45px;
+    padding-bottom: 75px;
   }
 
   @media (max-width: $vp-767) {
@@ -39,8 +45,6 @@
   font-size: 20px;
   line-height: 30px;
   margin: 0;
-  // margin-top: 50px;
-  // margin-left: 40px;
 }
 
 .products__container p {
@@ -66,10 +70,16 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 85px;
+
+  @media (max-width: $vp-1660) {
+    gap: 40px;
+  }
 
   @media (max-width: $vp-1023) {
     flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -108,10 +118,13 @@
     }
   }
 
+  @media (max-width: $vp-1220) {
+    width: 35%;
+  }
+
   @media (max-width: $vp-1023) {
     width: 100%;
     min-height: 250px;
-    margin-bottom: 30px;
     padding: 37px 45px;
     background-image: url("../../img/background-card-1-tablet.png");
 

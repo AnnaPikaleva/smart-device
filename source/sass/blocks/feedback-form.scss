@@ -1,6 +1,4 @@
 .feedback-form {
-  min-height: 671px;
-  padding-top: 170px;
   background-color: $color-light-blue;
   position: relative;
 
@@ -32,41 +30,35 @@
 
 .feedback-form__container {
   position: relative;
-  width: calc(87% - 630px);
-  padding-left: 630px;
+  padding: 170px 50px 247px;
   display: flex;
-  flex-direction: column;
-  color: $color-default-white;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/paper-airplane.png");
-    width: 510px;
-    height: 285px;
-    top: 19%;
-    left: 0;
-  }
-
-  @media (min-width: $vp-1600) {
-    width: calc(64% - 630px);
-  }
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
 
   @media (max-width: $vp-1023) {
     padding: 0;
     padding-top: 45px;
+    width: 87%;
+    margin: 0 auto;
+    display: block;
 
     &::before {
       display: none;
     }
   }
+}
 
-  @media (max-width: $vp-767) {
+.feedback-form__box {
+  width: 585px;
+  color: $color-default-white;
 
+  @media (max-width: $vp-1023) {
+    width: auto;
   }
 }
 
-.feedback-form__container h2 {
+.feedback-form__container h3 {
   font-family: $ff-roboto;
   font-size: 36px;
   line-height: 51px;
@@ -102,7 +94,7 @@
 
 .feedback-form__container form {
   display: grid;
-  grid-template-columns: repeat(2, 46%);
+  grid-template-columns: repeat(2, 47%);
   grid-template-rows: repeat(3, auto);
   row-gap: 20px;
   column-gap: 30px;
@@ -128,6 +120,7 @@
   box-sizing: border-box;
   color: $color-default-white;
   font-size: 16px;
+  // position: relative;
 
   &::placeholder {
     font-family: $ff-ptmono;
@@ -194,8 +187,9 @@
 }
 
 .feedback-form__container label {
+  position: relative;
   &:last-of-type {
-    position: relative;
+    // position: relative;
     display: block;
     padding-left: 40px;
   }
@@ -216,18 +210,13 @@
   }
 }
 
-.feedback-form__container span {
-  &:first-of-type {
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    top: 20px;
-    left: 12px;
-    background-color: $color-light-blue;
-    border: 1px solid $color-default-white;
-    border-radius: 2px;
-  }
+.feedback-form__error {
+  position: absolute;
+  left: 10px;
+  bottom: -20px;
+}
 
+.feedback-form__container span {
   &:last-of-type {
     font-size: 14px;
     line-height: 16px;
@@ -236,19 +225,26 @@
     display: inline-block;
     margin-top: 15px;
   }
+}
 
-  @media (max-width: $vp-1023) {
-    &:first-of-type {
-      top: 45%;
-      left: 0;
-    }
-  }
+.feedback-form__container .control-mark {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    background-color: $color-light-blue;
+    border: 1px solid $color-default-white;
+    border-radius: 2px;
 
-  @media (max-width: $vp-767) {
-    &:first-of-type {
-      left: 3px
+    @media (max-width: $vp-1023) {
+        top: 45%;
+        left: 0;
     }
-  }
+
+    @media (max-width: $vp-767) {
+        left: 3px;
+    }
 }
 
 .feedback-form__container input[type="checkbox"]:checked + span {
@@ -262,5 +258,15 @@
     background-image: url("../../img/svg/check.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+}
+
+.feedback-form__img {
+  display: block;
+  margin-top: 15px;
+  margin-left: -5px;
+
+  @media (max-width: $vp-1023) {
+    display: none;
   }
 }
