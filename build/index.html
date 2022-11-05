@@ -36,6 +36,7 @@
                 </a>
               </li>
             </ul>
+          </nav>
           <a class="main-nav__button-link button" href="#" data-open-modal="feedback">Заказать звонок</a>
         </div>
       </header>
@@ -50,27 +51,39 @@
             </a>
         </section>
         <section class="main-page__advantages advantages">
-          <div class="advantages__container container">
+          <div class="advantages__container">
             <h2 class="visually-hidden">Преимущества</h2>
-            <ul>
-              <li>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor">
+                  <use xlink:href="img/sprite.svg#watch"></use>
+                </svg>
                 <h3>Оперативные сроки</h3>
                 <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
                   производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
               </li>
-              <li>
+              <li class="advantages__item">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor">
+                  <use xlink:href="img/sprite.svg#hired"></use>
+                </svg>
                 <h3>Крупные поставщики</h3>
                 <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
                 HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
                 </p>
               </li>
-              <li>
+              <li class="advantages__item advantages__item--short">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor">
+                  <use xlink:href="img/sprite.svg#detective"></use>
+                </svg>
                 <h3>Полная конфиденциальность</h3>
                 <p>По желанию клиента  мы обеспечиваем полную конфиденциальность.</p>
               </li>
-              <li>
+              <li class="advantages__item advantages__item--short-card">
+                <svg width="35" height="35" viewBox="0 0 35 35">
+                  <use xlink:href="img/sprite.svg#tag-dollar"></use>
+                </svg>
                 <h3>Персонализация стоимости</h3>
-                <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+                <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
               </li>
             </ul>
           </div>
@@ -80,7 +93,7 @@
             <h2>О компании</h2>
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
             <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-            <span id="close-mobile">Печатные платы и комплектующие Service Devices применяются
+            <span id="close-mobile" class="about-compant__text">Печатные платы и комплектующие Service Devices применяются
               на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
               <p id="box">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
                 Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
@@ -94,20 +107,17 @@
             <ul>
               <li class="products__item products__item--card1">
                 <a href="#">
-                  <h3>Производство<br> печатных плат</h3>
-                  <button type="button"></button>
+                  <p>Производство печатных плат</p>
                 </a>
               </li>
               <li class="products__item products__item--card2">
                 <a href="#">
-                  <h3>Монтаж <br>печатных плат</h3>
-                  <button type="button"></button>
+                  <p>Монтаж печатных плат</p>
                 </a>
               </li>
               <li class="products__item products__item--card3">
                 <a href="#">
-                  <h3>Комплектующие<br> для светотехники</h3>
-                  <button type="button"></button>
+                  <p>Комплектующие для светотехники</p>
                 </a>
               </li>
             </ul>
@@ -125,15 +135,15 @@
               <p>Мы проконсультируем Вас бесплатно</p>
               <form class="js-form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off" data-form>
                 <label>
-                  <input class="field" type="text" name="name" placeholder="Имя" minlength="1" data-user-name required>
+                  <input type="text" name="name" placeholder="Имя" minlength="1" data-user-name required>
                 </label>
                 <label>
-                  <input class="field" type="tel" placeholder="Телефон" id="tel" maxlength="16" data-tel required>
+                  <input type="tel" placeholder="Телефон" id="tel" maxlength="16" data-tel required>
                 </label>
                 <textarea placeholder="Ваш вопрос" name="question"></textarea>
                 <label>
-                  <input class="visually-hidden field" type="checkbox" name="personal-data" id="presonal-data" required>
-                  <span class="feedback-form__control-mark control-mark"></span>
+                  <input class="visually-hidden" type="checkbox" name="personal-data" id="presonal-data" required>
+                  <span class="feedback-form__control-mark"></span>
                   <span class="control-mark__text">Я согласен на обработку персональных данных</span>
                 </label>
                 <button class="button" type="submit" data-button>Задать вопрос</button>
@@ -145,32 +155,39 @@
       <footer class="footer">
         <div class="footer__container">
           <section class="footer__social">
-            <div class="footer__box">
-              <div class="footer__wrapper-social">
+            <!-- <div class="footer__box"> -->
+              <div class="footer__social-wrapper">
                 <a>
-                  <img src="img/full-logo.svg" width="215" height="55" alt="Логотип Smart Device умные технологии.">
+                  <img src="img/svg/full-logo.svg" width="215" height="55" alt="Логотип Smart Device умные технологии.">
                 </a>
-                  <ul>
-                    <li>
+                  <ul class="footer__social-list">
+                    <li class="footer__social-item">
                       <a href="#">
-                        <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M15.171 12.643c1.157 0 2.057-.965 2.036-2.014.021-1.05-.857-2.036-2.014-2.036-1.115 0-2.036.9-2.036 2.014 0 1.114.9 2.036 2.014 2.036Z" fill="#F8FDFF"/><path d="M15 0C6.729 0 0 6.729 0 15c0 8.293 6.729 15 15 15 8.293 0 15-6.729 15-15 .021-8.271-6.707-15-15-15Zm.214 5.679c2.7 0 4.929 2.228 4.907 4.95 0 2.742-2.25 4.95-4.992 4.907-2.7-.043-4.865-2.25-4.865-4.929a4.934 4.934 0 0 1 4.95-4.928Zm5.507 11.571c0 .043-.021.064-.021.107a1.401 1.401 0 0 1-.643 1.007c-.236.15-.493.3-.75.429a9.662 9.662 0 0 1-2.036.75c-.085.021-.085.021-.021.086l1.178 1.178 1.5 1.5a1.43 1.43 0 0 1-.385 2.314c-.15.086-.322.108-.493.15h-.279c-.021 0-.043 0-.043-.021-.342-.043-.62-.214-.878-.45l-2.593-2.593c-.064-.064-.064-.064-.128 0l-2.615 2.614c-.15.15-.3.258-.493.343-.128.065-.278.086-.407.107h-.278c-.043 0-.065-.021-.107-.021-.579-.107-.965-.429-1.136-.986-.172-.557-.043-1.05.364-1.457l1.072-1.071 1.585-1.586c.064-.064.064-.064-.021-.086-.022 0-.065-.021-.086-.021a9.26 9.26 0 0 1-2.678-1.136c-.493-.321-.729-.793-.665-1.371a1.44 1.44 0 0 1 2.207-1.072c.172.107.322.193.515.279a6.1 6.1 0 0 0 3.128.643 6.069 6.069 0 0 0 1.607-.3c.515-.172.965-.407 1.436-.665a1.445 1.445 0 0 1 2.079.75c.043.129.064.236.085.365v.214Z"/></svg>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor">
+                          <use xlink:href="img/sprite.svg#ok"></use>
+                        </svg>
                         <span class="visually-hidden">Мы в Одноклассниках.</span>
                       </a>
                     </li>
-                    <li>
+                    <li class="footer__social-item">
                       <a href="#">
-                        <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M21.617 17.454c-1.235-1.181-1.323-1.181-.265-2.545C22.676 13.182 24.44 11 22.852 11h-2.911c-.53 0-.618.364-.794.818-.706 1.728-2.118 4-2.647 3.636-.53-.363-.265-1.727-.265-3.908a.722.722 0 0 0-.177-.728c-.176-.181-.44-.363-.706-.363-.44-.091-.882-.182-1.323-.182-1.676 0-2.823.727-2.206.818 1.147.182 1.059 2.727.794 3.818-.44 1.91-2.206-1.454-3-3.182A.865.865 0 0 0 8.735 11H6.441c-.353 0-.618.091-.618.364 0 .454 2.206 4.909 4.236 7.181 2.029 2.182 4.058 2 5.47 2 .176 0 .353-.09.441-.182a.706.706 0 0 0 .177-.454c0-1.455.529-2.182 1.5-1.182 1.058 1.09 1.323 1.818 2.647 1.818h2.382c.617 0 .794-.182.794-.454.088-.637-.97-1.819-1.853-2.637ZM15.352.001C23.558.183 30.087 7 30 15.273c-.088 8.272-6.882 14.817-15.088 14.726C6.617 29.91 0 23.272 0 15 .088 6.637 6.97-.09 15.352 0Z"/></svg>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor">
+                          <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg>
                         <span class="visually-hidden">Мы в Вконтакте.</span>
                       </a>
                     </li>
-                    <li>
+                    <li class="footer__social-item">
                       <a href="#">
-                        <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M15 0c8.285 0 15 6.716 15 15 0 8.285-6.715 15-15 15S0 23.285 0 15C0 6.716 6.715 0 15 0Z" fill="#F8FDFF"/><path d="M15 5C9.482 5 5 9.482 5 15s4.482 10 10 10 10-4.482 10-10S20.518 5 15 5Zm0 .87A9.124 9.124 0 0 1 24.13 15 9.124 9.124 0 0 1 15 24.13a9.148 9.148 0 0 1-2.654-.392c.374-.625.857-1.519 1.049-2.257l.583-2.222c.304.581 1.194 1.073 2.141 1.073 2.82 0 4.852-2.593 4.852-5.814 0-3.09-2.52-5.4-5.764-5.4-4.035 0-6.176 2.708-6.176 5.657 0 1.371.73 3.078 1.897 3.622.177.082.272.046.313-.125.03-.13.189-.765.26-1.06a.28.28 0 0 0-.065-.268c-.386-.469-.696-1.33-.696-2.133 0-2.062 1.56-4.058 4.22-4.058 2.296 0 3.905 1.566 3.905 3.804 0 2.528-1.277 4.28-2.938 4.28-.918 0-1.605-.759-1.385-1.69.264-1.11.775-2.31.775-3.112 0-.717-.385-1.316-1.183-1.316-.938 0-1.692.97-1.692 2.27 0 .827.28 1.387.28 1.387s-.926 3.918-1.096 4.647c-.17.729-.124 1.71-.054 2.44A9.124 9.124 0 0 1 5.87 15 9.124 9.124 0 0 1 15 5.87Z"></svg>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor">
+                          <use xlink:href="img/sprite.svg#pinterest"></use>
+                        </svg>
+                        <!-- <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M15 0c8.285 0 15 6.716 15 15 0 8.285-6.715 15-15 15S0 23.285 0 15C0 6.716 6.715 0 15 0Z" fill="#F8FDFF"/><path d="M15 5C9.482 5 5 9.482 5 15s4.482 10 10 10 10-4.482 10-10S20.518 5 15 5Zm0 .87A9.124 9.124 0 0 1 24.13 15 9.124 9.124 0 0 1 15 24.13a9.148 9.148 0 0 1-2.654-.392c.374-.625.857-1.519 1.049-2.257l.583-2.222c.304.581 1.194 1.073 2.141 1.073 2.82 0 4.852-2.593 4.852-5.814 0-3.09-2.52-5.4-5.764-5.4-4.035 0-6.176 2.708-6.176 5.657 0 1.371.73 3.078 1.897 3.622.177.082.272.046.313-.125.03-.13.189-.765.26-1.06a.28.28 0 0 0-.065-.268c-.386-.469-.696-1.33-.696-2.133 0-2.062 1.56-4.058 4.22-4.058 2.296 0 3.905 1.566 3.905 3.804 0 2.528-1.277 4.28-2.938 4.28-.918 0-1.605-.759-1.385-1.69.264-1.11.775-2.31.775-3.112 0-.717-.385-1.316-1.183-1.316-.938 0-1.692.97-1.692 2.27 0 .827.28 1.387.28 1.387s-.926 3.918-1.096 4.647c-.17.729-.124 1.71-.054 2.44A9.124 9.124 0 0 1 5.87 15 9.124 9.124 0 0 1 15 5.87Z"></svg> -->
                         <span class="visually-hidden">Мы в Пинтерест.</span>
                       </a>
                     </li>
                   </ul>
-              </div>
+              <!-- </div> -->
             </div>
           </section>
           <div class="footer__wrapper-position">
@@ -181,7 +198,7 @@
                   <button type="button" class="contacts__accordion accordion" data-accordion = "tab-1">
                     <span class="visually-hidden">Открыть.</span>
                   </button>
-                  <div class="accordion__list">
+                  <div class="navigation-footer__list accordion__list">
                     <ul>
                       <li>
                         <a href="#">О Компании</a>
@@ -251,7 +268,7 @@
           </button>
           <h2>Закажите звонок</h2>
           <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <form action="https://echo.htmlacademy.ru" method="get" autocomplete="off" data-modal-window>
+          <form class="modal__form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off" data-modal-window>
             <p>
               <input type="text" id="customer-name" placeholder="Имя" name="name" minlength="1" placeholder autofocus required>
               <label class="visually-hidden" id="customer-name">Имя</label>

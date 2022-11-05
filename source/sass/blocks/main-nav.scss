@@ -1,32 +1,51 @@
 .main-nav {
-  width: 67.6%;
-
   @media (max-width: $vp-1023) {
-    width: auto;
     margin: 0;
-  }
-
-  @media (max-width: $vp-767) {
-    width: 23%;
+    align-self: center;
   }
 }
 
 .main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+
   @media (max-width: $vp-1023) {
-    list-style: none;
-    padding: 0;
+    margin-right: 20px;
+    margin-top: -11px;
+    justify-content: flex-end;
+    gap: 19px;
+  }
+
+  @media (max-width: $vp-767) {
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    margin-right: 18px;
-    margin-top: -15px;
+    margin-right: 9px;
+    flex-wrap: nowrap;
+  }
+}
+
+.main-nav__item a {
+  display: flex;
+  align-items: flex-start;
+
+  @media (max-width: $vp-1023) {
+    display: inline;
   }
 }
 
 .main-nav__mail-link {
-  margin-left: -20px;
+  margin-right: 122px;
+
+  @media (max-width: $vp-1660) {
+    margin-right: 50px;
+  }
+
+  @media (max-width: $vp-1220) {
+    margin-right: 25px;
+  }
 
   @media (max-width: $vp-1023) {
     padding: 10px;
@@ -35,14 +54,16 @@
 }
 
 .main-nav span {
+  display: block;
+  margin-left: 13px;
+
   @media (max-width: $vp-1023) {
     display: none;
+    padding: 0;
   }
 }
 
 .main-nav__phone {
-  margin-left: -45px;
-
   @media (max-width: $vp-1023) {
     padding: 10px;
     margin: 0;
@@ -55,8 +76,17 @@
   text-align: center;
   letter-spacing: 0.05em;
   border: 1px solid $color-font-light;
-  padding: 10px 15px;
+  padding: 10px 16px;
+  display: inline-block;
+  margin-top: 6px;
+  justify-self: flex-end;
+  margin-left: auto;
   margin-right: 62px;
+
+  @media (max-width: $vp-1660) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   @media (max-width: $vp-1023) {
     display: none;

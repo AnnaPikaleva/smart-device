@@ -1,7 +1,7 @@
 .navigation-footer {
   @media (max-width: $vp-767) {
   position: relative;
-  padding-top: 21px;
+  padding-top: 23px;
   padding-bottom: 1px;
 
     &::before,
@@ -48,9 +48,13 @@
     margin: 0;
     margin-bottom: 23px;
   }
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 21px;
+  }
 }
 
-.navigation-footer__wrapper div {
+.navigation-footer__list {
   display: flex;
   justify-content: space-between;
 

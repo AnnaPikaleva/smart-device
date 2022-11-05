@@ -51,7 +51,7 @@
 
   @media (max-width: $vp-1023) {
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 8px;
   }
 
   @media (max-width: $vp-767) {
@@ -67,6 +67,10 @@
 .contacts__wrapper p {
   margin-bottom: 11px;
 
+  @media (max-width: $vp-1023) {
+    margin-bottom: 9px;
+  }
+
   @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 135%;
@@ -76,6 +80,10 @@
 
 .contacts__wrapper li {
   margin-bottom: 10px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 9px;
+  }
 
   @media (max-width: $vp-767) {
     margin-bottom: 8px;

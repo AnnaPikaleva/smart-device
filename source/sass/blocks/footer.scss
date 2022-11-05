@@ -2,10 +2,6 @@
   background-color: $background-color-dark;
   color: $color-default-white;
   flex-shrink: 0;
-
-  @media (max-width: $vp-767) {
-    padding-top: 35px;
-  }
 }
 
 .footer__container {
@@ -18,10 +14,15 @@
     padding: 50px 55px 55px 50px;
   }
 
-  // @media (max-width: $vp-1023) {
-  //   width: auto;
-  //   display: block;
-  // }
+  @media (max-width: $vp-1023) {
+    width: auto;
+    display: block;
+    padding: 50px 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 35px 0;
+  }
 }
 
 .footer__container ul {
@@ -30,10 +31,7 @@
   margin: 0;
 }
 
-.footer__wrapper-social {
-  max-width: 220px;
-  width: 210px;
-
+.footer__social-wrapper {
   @media (max-width: $vp-1220) {
     width: auto;
   }
@@ -41,65 +39,78 @@
   @media (max-width: $vp-1023) {
     display: flex;
     justify-content: space-between;
-    margin-right: 0;
+    margin: 0;
+    margin-bottom: 22px;
     flex-wrap: wrap;
+    max-width: 100%;
   }
 
   @media (max-width: $vp-767) {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    padding-bottom: 23px;
   }
 }
 
-.footer__wrapper-social a {
+.footer__social-wrapper a {
   display: inline-block;
-  vertical-align: auto;
-  margin-bottom: 30px;
+}
+
+.footer__social-wrapper img {
+  margin-bottom: 31px;
+  margin-left: -4px;
+
+  @media (max-width: $vp-1023) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 
   @media (max-width: $vp-767) {
     margin-bottom: 18px;
+    margin-left: -4px;
   }
-}
+ }
 
-.footer__wrapper-social ul {
+.footer__social-list {
   margin: 0;
-  margin-left: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 210px;
 
   @media (max-width: $vp-1023) {
     justify-content: flex-end;
   }
 
   @media (max-width: $vp-767) {
-    margin-left: 0;
-    width: 55%;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 
-.footer__wrapper-social li {
+.footer__social-item {
   margin-right: 25px;
 
-  &:last-of-type {
+  &:first-child {
+    margin-left: 10px;
+  }
+
+  &:last-child {
     margin-right: 0;
   }
 
   @media (max-width: $vp-1023) {
     align-self: center;
     margin-top: -4px;
-  }
 
-  @media (max-width: $vp-767) {
-    margin-right: 18px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
-.footer__container svg {
+.footer__social-item svg {
   fill: $background-default-color;
 }
 
@@ -121,22 +132,13 @@
   }
 
   @media (max-width: $vp-1023) {
-    width: 87%;
-    margin: 0 auto;
+    margin-left: 0;
+    justify-content: space-between;
   }
 
   @media (max-width: $vp-767) {
     display: block;
     width: auto;
-  }
-}
-
-.footer__box {
-  margin: 0;
-  width: auto;
-
-  @media (max-width: $vp-1023) {
-    margin: 0 auto;
-    width: 87%;
+    padding-top: 0;
   }
 }

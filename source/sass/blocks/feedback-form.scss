@@ -10,7 +10,7 @@
     background-color: $backgroundcolor-feedback-polygon;
     top: 0;
     left: 0;
-    clip-path: polygon(0 0, 51% 0, 0 100%);
+    clip-path: polygon(0 0, 50.5% 0, 0 100%);
   }
 
   @media (max-width: $vp-1023) {
@@ -22,30 +22,29 @@
       display: none;
     }
   }
-
-  @media (max-width: $vp-767) {
-    padding-bottom: 88px;
-  }
 }
 
 .feedback-form__container {
   position: relative;
-  padding: 170px 50px 247px;
+  padding: 166px 50px 247px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 110px;
+  gap: 115px;
 
   @media (max-width: $vp-1023) {
-    padding: 0;
     padding-top: 45px;
-    width: 87%;
-    margin: 0 auto;
-    display: block;
+    padding-bottom: 124px;
+    gap: 0;
+    justify-content: center;
 
     &::before {
       display: none;
     }
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 48px 25px 88px;
   }
 }
 
@@ -55,6 +54,12 @@
 
   @media (max-width: $vp-1023) {
     width: auto;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $vp-767) {
+    width: auto;
+    margin: 0;
   }
 }
 
@@ -64,7 +69,7 @@
   line-height: 51px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   @media (max-width: $vp-1023) {
     margin-bottom: 7px;
@@ -73,13 +78,13 @@
   @media (max-width: $vp-767) {
     font-size: 30px;
     line-height: 140%;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 
 .feedback-form__container p {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   @media (max-width: $vp-1023) {
     margin-bottom: 25px;
@@ -88,7 +93,7 @@
   @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 134%;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 }
 
@@ -100,7 +105,8 @@
   column-gap: 30px;
 
   @media (max-width: $vp-1023) {
-    grid-template-columns: repeat(2, 47.8%);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 
   @media (max-width: $vp-767) {
@@ -139,7 +145,7 @@
   padding: 25px 15px;
   box-sizing: border-box;
   min-height: 155px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 
   &::placeholder {
     font-family: $ff-ptmono;
@@ -154,7 +160,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 25px 15px;
+    padding: 23px 15px;
     min-height: 180px;
     margin-bottom: 10px;
   }
@@ -164,7 +170,7 @@
   grid-column: 1/2;
   grid-row: 3/4;
   background-color: $color-dark-blue;
-  padding: 15px 25px;
+  padding: 14px 25px;
   width: 97%;
   font-family: $ff-roboto;
   font-size: 16px;
@@ -189,7 +195,6 @@
 .feedback-form__container label {
   position: relative;
   &:last-of-type {
-    // position: relative;
     display: block;
     padding-left: 40px;
   }
@@ -227,23 +232,23 @@
   }
 }
 
-.feedback-form__container .control-mark {
+.feedback-form__control-mark {
     width: 14px;
     height: 14px;
     position: absolute;
-    top: 20px;
+    top: 23px;
     left: 12px;
     background-color: $color-light-blue;
     border: 1px solid $color-default-white;
     border-radius: 2px;
 
     @media (max-width: $vp-1023) {
-        top: 45%;
+        top: 44%;
         left: 0;
     }
 
     @media (max-width: $vp-767) {
-        left: 3px;
+        left: 5px;
     }
 }
 
