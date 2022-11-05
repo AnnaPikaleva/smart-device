@@ -1264,6 +1264,9 @@ button,
 
   .products__container ul {
     gap: 40px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .main-nav__mail-link {
@@ -1272,13 +1275,12 @@ button,
 
   .main-nav__button-link {
     margin-left: 0;
-    margin-right: 0;
   }
 }
 
 @media (max-width: 1600px) {
   .main-page__container {
-    width: 70%;
+    width: 73%;
   }
 
   .advantages__container {
@@ -1290,7 +1292,7 @@ button,
   }
 
   .products__container {
-    width: 87%;
+    width: 85%;
   }
 }
 
@@ -1482,6 +1484,9 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .products__item {
@@ -1703,6 +1708,7 @@ button,
 
   .main-nav__button-link {
     display: none;
+    margin-right: 0;
   }
 
   .accordion__list {

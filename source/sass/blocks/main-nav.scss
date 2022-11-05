@@ -85,10 +85,11 @@
 
   @media (max-width: $vp-1660) {
     margin-left: 0;
-    margin-right: 0;
+    // margin-right: 0;
   }
 
   @media (max-width: $vp-1023) {
     display: none;
+    margin-right: 0;
   }
 }
