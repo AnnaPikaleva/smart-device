@@ -26,10 +26,16 @@
   }
 }
 
+.main-header__index {
+  display: block;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .main-header__container {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
 

@@ -143,6 +143,12 @@ button,
   /* stylelint-disable-next-line */
 }
 
+.wrapper .header,
+.wrapper .footer {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
 .wrapper main {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -366,13 +372,19 @@ button,
   align-items: center;
 }
 
+.main-header__index {
+  display: block;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .main-header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -1242,6 +1254,13 @@ button,
 
 .no-js {
   display: block;
+}
+
+.page__index {
+  display: block;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /* @mixin hover-focus {
