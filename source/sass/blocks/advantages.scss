@@ -64,14 +64,50 @@
     color: $color-font-light;
   }
 
+  &:hover svg {
+    fill: $color-hover;
+  }
+
   @media (max-width: $vp-1023) {
     padding: 40px 45px 28px 40px;
+
+    &--short-card svg {
+      margin-bottom: 5px;
+    }
+
+    &--short-card h3 {
+      margin-bottom: 6px;
+    }
   }
 
   @media (max-width: $vp-767) {
     padding: 30px 25px 35px;
     margin-bottom: 27px;
     height: auto;
+
+    &--short-card svg {
+      margin-bottom: 13px;
+    }
+
+    &--short,
+    &--short-card {
+      margin-top: 5px;
+      margin-bottom: 24px;
+      padding: 30px 30px 35px 25px;
+    }
+
+    &--short p,
+    &--short-card p {
+      min-height: 140px;
+    }
+
+    &--short h3 {
+      margin-bottom: 15px;
+    }
+
+    &--short-card h3 {
+      margin-bottom: 14px;
+    }
 
     &:last-of-type {
       margin-bottom: 0;
@@ -91,37 +127,6 @@
   @media (max-width: $vp-767) {
     width: 30px;
     height: 30px;
-  }
-}
-
-.advantages__item {
-  &:hover svg {
-    fill: $color-hover;
-  }
-}
-
-.advantages__item {
-  @media (max-width: $vp-1023) {
-      &--short-card svg {
-      margin-bottom: 5px;
-    }
-  }
-
-  @media (max-width: $vp-767) {
-    &--short-card svg {
-      margin-bottom: 13px;
-    }
-  }
-}
-
-.advantages__item {
-  @media (max-width: $vp-767) {
-    &--short,
-    &--short-card {
-      margin-top: 5px;
-      margin-bottom: 24px;
-      padding: 30px 30px 35px 25px;
-    }
   }
 }
 
@@ -156,28 +161,5 @@
     font-size: 14px;
     line-height: 135%;
     min-height: 190px;
-  }
-}
-
-.advantages__item {
-  @media (max-width: $vp-1023) {
-    &--short-card h3 {
-      margin-bottom: 6px;
-    }
-  }
-
-  @media (max-width: $vp-767) {
-    &--short p,
-    &--short-card p {
-      min-height: 140px;
-    }
-
-    &--short h3 {
-      margin-bottom: 15px;
-    }
-
-    &--short-card h3 {
-      margin-bottom: 14px;
-    }
   }
 }

@@ -36,30 +36,6 @@ document.querySelector('.main-header__button-link').addEventListener('click', fu
   }, 100);
 });
 
-// Phone
-
-document.addEventListener('DOMContentLoaded', () => {
-  const element = document.getElementById('tel');
-  if (!element) {
-    return;
-  }
-  const maskOptions = {
-    mask: '+{7}(000)000-00-00',
-  };
-  IMask(element, maskOptions);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const element = document.getElementById('phone-number');
-  if (!element) {
-    return;
-  }
-  const maskOptions = {
-    mask: '+{7}(000)000-00-00',
-  };
-  IMask(element, maskOptions);
-});
-
 // Validate form
 
 const reg = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
@@ -100,6 +76,60 @@ form.addEventListener('submit', function (event) {
     form.submit();
   }
 });
+
+// Маска для телефона
+
+const phoneInputs = document.querySelectorAll('input[data-tel]');
+
+const prefixNumber = (str) => {
+  if (str === '7') {
+    return '7 (';
+  }
+  if (str === '8') {
+    return '7 (';
+  }
+  if (str === '9') {
+    return '7 (9';
+  }
+  return '7 (';
+};
+
+function validation(inputValid) {
+  inputValid.addEventListener('input', () => {
+    const value = inputValid.value.replace(/\D+/g, '');
+    const numberLength = 11;
+
+    let result;
+    if (inputValid.value.includes('+8') || inputValid.value[0] === '8') {
+      result = '+';
+    } else {
+      result = '+';
+    }
+
+    for (let i = 0; i < value.length && i < numberLength; i++) {
+      switch (i) {
+        case 0:
+          result += prefixNumber(value[i]);
+          continue;
+        case 4:
+          result += ') ';
+          break;
+        case 7:
+          result += '-';
+          break;
+        case 9:
+          result += '-';
+          break;
+        default:
+          break;
+      }
+      result += value[i];
+    }
+    inputValid.value = result;
+  });
+}
+
+phoneInputs.forEach((phoneInput) => validation(phoneInput));
 
 // ---------------------------------
 

@@ -22,7 +22,6 @@
     top: 21px;
     right: 25px;
     background-color: transparent;
-    // border: none;
     width: 15px;
     height: 15px;
   }
@@ -61,7 +60,6 @@
 
 .contacts__wrapper address {
   font-style: normal;
-
 }
 
 .contacts__item {
@@ -79,13 +77,13 @@
 .contacts__item a {
   color: $color-default-white-opacity;
 
-&:hover {
-  color: $color-light-blue;
-}
+  &:hover {
+    color: $color-light-blue;
+  }
 
-&:focus {
-  color: $color-light-blue;
-}
+  &:focus {
+    color: $color-light-blue;
+  }
 
   @media (max-width: $vp-767) {
     font-size: 14px;

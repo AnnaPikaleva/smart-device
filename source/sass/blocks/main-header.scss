@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   color: $color-font-light;
-  background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);;
+  background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   width: 100%;
   z-index: 10;
   padding: 30px 350px;
@@ -22,7 +22,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 0
+    padding: 0;
   }
 }
 
@@ -62,7 +62,7 @@
   margin-left: 13%;
 
   @media (max-width: $vp-1660) {
-    margin-left: 0
+    margin-left: 0;
   }
 
   @media (max-width: $vp-1023) {

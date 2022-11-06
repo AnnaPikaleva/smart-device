@@ -1,8 +1,8 @@
 .navigation-footer {
   @media (max-width: $vp-767) {
-  position: relative;
-  padding-top: 23px;
-  padding-bottom: 1px;
+    position: relative;
+    padding-top: 23px;
+    padding-bottom: 1px;
 
     &::before,
     &::after {
@@ -60,10 +60,6 @@
 
   @media (max-width: $vp-1400) {
     flex-direction: column;
-  }
-
-  @media (max-width: $vp-767) {
-    display: none;
   }
 }
 

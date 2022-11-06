@@ -1,13 +1,12 @@
 .accordion {
   @media (max-width: $vp-767) {
+    // padding: 15px 70px 15px 70px;
     position: relative;
     border: none;
     cursor: pointer;
-  }
-}
+    width: 87%;
+    height: 15px;
 
-.accordion {
-    @media (max-width: $vp-767) {
     &::before,
     &::after {
       content: "";
@@ -25,7 +24,7 @@
   }
 }
 
-.accordion .active {
+.accordion.active {
   @media (max-width: $vp-767) {
     &::after {
       transform: rotate(0deg);
@@ -34,11 +33,8 @@
 }
 
 .accordion__list {
-
-
   @media (max-width: $vp-1023) {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -47,4 +43,3 @@
     display: none;
   }
 }
-

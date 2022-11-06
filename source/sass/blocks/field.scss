@@ -19,8 +19,8 @@
   }
 }
 
-.field input[type=text],
-.field input[type=tel] {
+.field input[type="text"],
+.field input[type="tel"] {
   &:hover,
   &:focus {
     outline: 2px solid $color-default-white;
@@ -74,7 +74,11 @@
   }
 }
 
-.field label {
+.field__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &:last-of-type {
     position: relative;
     display: block;
@@ -103,7 +107,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 2px 10px $color-default-white;
+    box-shadow: 0 2px 10px $color-default-white;
   }
 }
 
@@ -121,17 +125,13 @@
   }
 }
 
-.field input[type=checkbox] {
+.field input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   left: 7px;
   width: 15px;
-  height: 15px;
-}
-
-.field__checkbox {
-  display: flex;
-  justify-content: center;
+  height: 2px;
+  min-height: 14px;
 }
 
 .field__checkbox input:focus + span {

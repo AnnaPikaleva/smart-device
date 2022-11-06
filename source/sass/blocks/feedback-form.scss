@@ -149,20 +149,16 @@
   }
 }
 
-.feedback-form__field label {
+.feedback-form__field .field__checkbox {
   @media (max-width: $vp-1023) {
-    &:last-of-type {
-      padding-left: 25px;
-      margin-top: -5px;
-    }
+    padding-left: 25px;
+    margin-top: -5px;
   }
 
   @media (max-width: $vp-767) {
-    &:last-of-type {
-      order: 1;
-      margin-top: -12px;
-      padding-left: 30px;
-    }
+    order: 1;
+    margin-top: -12px;
+    padding-left: 30px;
   }
 }
 
@@ -192,7 +188,6 @@
   }
 
   @media (max-width: $vp-767) {
-    top: 22px;
     left: 5px;
   }
 }

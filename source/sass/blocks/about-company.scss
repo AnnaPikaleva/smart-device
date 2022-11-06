@@ -1,13 +1,12 @@
 .about-company__container {
   position: relative;
   width: 64%;
-  margin-bottom: 120px;
   margin: 0 auto;
   padding: 60px 0 122px 255px;
 
   &::after {
     content: "";
-    background-image: url(../../img/2022.png);
+    background-image: url("../../img/2022.png");
     width: 150px;
     height: 320px;
     position: absolute;
@@ -88,7 +87,7 @@
   background-color: transparent;
   border: 1px solid $color-light-blue;
   border-radius: 3px;
-  color:  $color-light-blue;
+  color: $color-light-blue;
   font-family: $ff-roboto;
   font-size: 14px;
   line-height: 16px;
@@ -134,11 +133,11 @@
 
 .about-company__text {
   @media (max-width: $vp-767) {
-      display: none;
+    display: none;
   }
 
   @media (min-width: $vp-768) {
-      display: inline;
+    display: inline;
   }
 }
 

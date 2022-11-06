@@ -138,7 +138,7 @@
                   <input type="text" name="name" placeholder="Имя" minlength="1" data-user-name required>
                 </label>
                 <label>
-                  <input type="tel" placeholder="Телефон" name="phone-number" id="tel" maxlength="16" data-tel required>
+                  <input type="tel" placeholder="Телефон" name="phone-number" id="tel" maxlength="18" data-tel required>
                 </label>
                 <textarea placeholder="Ваш вопрос" name="question"></textarea>
                 <div class="field__checkbox">
@@ -194,10 +194,10 @@
               <div class="navigation-footer__container">
                 <div class="navigation-footer__wrapper">
                   <h2>Разделы сайта</h2>
-                  <button type="button" class="navigation-footer accordion accordion" data-accordion = "tab-1">
+                  <button type="button" class="navigation-footer accordion" data-accordion = "tab-1">
                     <span class="visually-hidden">Открыть.</span>
                   </button>
-                  <div class="navigation-footer__list accordion__list">
+                  <div class="navigation-footer__list accordion__list accordion__list--opened no-js">
                     <ul>
                       <li>
                         <a href="#">О Компании</a>
@@ -234,7 +234,7 @@
                   <button type="button" class="contacts__accordion accordion" data-accordion = "tab-2">
                     <span class="visually-hidden">Открыть.</span>
                   </button>
-                  <address class="accordion__list">
+                  <address class="accordion__list accordion__list--opened no-js">
                     <ul>
                       <li class="contacts__item">
                         <a href="#">г. Мытищи, Олимпийский проспект,<br> д.10</a>
@@ -272,7 +272,7 @@
             </p>
             <p>
               <label class="visually-hidden" for="phone-number">Телефон</label>
-              <input type="tel" id="phone-number" placeholder="Телефон" name="phone-number" maxlength="16" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" data-modal-phone>
+              <input type="tel" id="phone-number" placeholder="Телефон" name="phone-number" maxlength="18" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" data-modal-phone data-tel>
             </p>
             <textarea placeholder="Ваш вопрос" name="question"></textarea>
             <div class="field__checkbox">
@@ -288,7 +288,6 @@
       </div>
     </div>
     <!-- <script src="js/vendor.min.js"></script> -->
-    <script src="https://unpkg.com/imask"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
