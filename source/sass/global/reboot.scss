@@ -1,5 +1,9 @@
 html {
   height: 100%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -81,18 +85,18 @@ textarea {
 // }
 
 // firefox placeholder \ invalid fix + ios bdrs
-// input,
-// textarea {
-//   border-radius: 0;
+input,
+textarea {
+  border-radius: 0;
 
-//   &::placeholder {
-//     opacity: 1;
-//   }
+  &::placeholder {
+    opacity: 1;
+  }
 
-//   &:invalid {
-//     box-shadow: none;
-//   }
-// }
+  &:invalid {
+    box-shadow: none;
+  }
+}
 
 // select {
 //   border-radius: 0;
@@ -127,17 +131,17 @@ textarea {
 // }
 
 // ios button \ inputs reset
-// select,
-// textarea,
-// input:matches([type="email"],
-//   [type="number"],
-//   [type="password"],
-//   [type="search"],
-//   [type="tel"],
-//   [type="text"],
-//   [type="url"]) {
-//   appearance: none;
-// }
+select,
+textarea,
+input:matches([type="email"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="url"]) {
+  appearance: none;
+}
 
 button,
 [type="button"],

@@ -6,6 +6,7 @@
   width: 100%;
   z-index: 10;
   padding: 30px 350px;
+  align-items: center;
 
   @media (max-width: $vp-1750) {
     padding: 30px 285px;
@@ -34,7 +35,6 @@
 
   @media (max-width: $vp-1660) {
     justify-content: space-between;
-    max-width: none;
   }
 
   @media (max-width: $vp-1023) {
@@ -69,5 +69,36 @@
     margin: 0;
     margin-right: 30px;
     display: block;
+  }
+}
+
+.main-header__button-link {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  border: 1px solid $color-font-light;
+  padding: 10px 16px;
+  display: inline-block;
+  margin-top: 6px;
+  justify-self: flex-end;
+  margin-left: auto;
+  margin-right: 62px;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    color: $color-light-blue;
+    border-color: $color-light-blue;
+    outline: $color-light-blue;
+  }
+
+  @media (max-width: $vp-1660) {
+    margin-left: 1px;
+  }
+
+  @media (max-width: $vp-1023) {
+    display: none;
+    margin-right: 0;
   }
 }

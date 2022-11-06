@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Focus
 
-document.querySelector('.main-nav__button-link').addEventListener('click', function () {
+document.querySelector('.main-header__button-link').addEventListener('click', function () {
   setTimeout(() => {
     document.querySelector('#customer-name').focus();
   }, 100);

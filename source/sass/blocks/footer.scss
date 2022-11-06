@@ -21,7 +21,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 35px 0;
+    padding: 36px 0 35px;
   }
 }
 
@@ -112,6 +112,16 @@
 
 .footer__social-item svg {
   fill: $background-default-color;
+
+  &:hover {
+    fill: $color-light-blue;
+  }
+}
+
+.footer__social-link {
+  &:focus svg {
+    fill: $color-light-blue;
+  }
 }
 
 .footer__wrapper-position {

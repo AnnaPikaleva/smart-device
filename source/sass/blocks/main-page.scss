@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 880px;
+  padding-bottom: 120px;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-intro@2x.png");
@@ -16,6 +17,7 @@
 
   @media (max-width: $vp-767) {
     min-height: 605px;
+    padding-bottom: 60px;
   }
 }
 
@@ -90,6 +92,21 @@
   letter-spacing: 0.05em;
   width: 410px;
   box-sizing: border-box;
+  user-select: none;
+
+  &:hover {
+    background-color: $hover-button;
+  }
+
+  &:focus {
+    background-color: $hover-button;
+    border-color: none;
+  }
+
+  &:active {
+    background-color: $active-button;
+    border-color: none;
+  }
 
   @media (max-width: $vp-1023) {
     margin-left: 45px;

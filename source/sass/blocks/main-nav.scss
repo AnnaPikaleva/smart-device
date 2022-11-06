@@ -57,6 +57,10 @@
   display: block;
   margin-left: 13px;
 
+  &:hover {
+    color: $color-light-blue;
+  }
+
   @media (max-width: $vp-1023) {
     display: none;
     padding: 0;
@@ -67,29 +71,5 @@
   @media (max-width: $vp-1023) {
     padding: 10px;
     margin: 0;
-  }
-}
-
-.main-nav__button-link {
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  border: 1px solid $color-font-light;
-  padding: 10px 16px;
-  display: inline-block;
-  margin-top: 6px;
-  justify-self: flex-end;
-  margin-left: auto;
-  margin-right: 62px;
-
-  @media (max-width: $vp-1660) {
-    margin-left: 0;
-    // margin-right: 0;
-  }
-
-  @media (max-width: $vp-1023) {
-    display: none;
-    margin-right: 0;
   }
 }
