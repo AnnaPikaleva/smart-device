@@ -1252,7 +1252,7 @@ button,
   outline: 5px solid rgba(4, 20, 39, 0.15);
 }
 
-.page__index {
+.page-index {
   display: block;
   width: 100%;
   max-width: 1920px;
