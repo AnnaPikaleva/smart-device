@@ -521,6 +521,25 @@ button,
   row-gap: 29px;
 }
 
+.advantages__item p {
+  color: #041827;
+}
+
+.advantages__item h3 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 140%;
+  color: #00b2ff;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.advantages__item svg {
+  fill: #00b2ff;
+  margin-bottom: 15px;
+}
+
 .advantages__item {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -543,25 +562,6 @@ button,
 
 .advantages__item:hover svg {
   fill: #f2f5f6;
-}
-
-.advantages__item svg {
-  fill: #00b2ff;
-  margin-bottom: 15px;
-}
-
-.advantages__item h3 {
-  margin: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 140%;
-  color: #00b2ff;
-  margin-bottom: 15px;
-  font-weight: 400;
-}
-
-.advantages__item p {
-  color: #041827;
 }
 
 .about-company__container {
@@ -1252,10 +1252,6 @@ button,
   outline: 5px solid rgba(4, 20, 39, 0.15);
 }
 
-.no-js {
-  display: block;
-}
-
 .page__index {
   display: block;
   width: 100%;
@@ -1496,6 +1492,20 @@ button,
     row-gap: 28px;
   }
 
+  .advantages__item p {
+    margin: 0;
+    line-height: 22px;
+  }
+
+  .advantages__item h3 {
+    margin-bottom: 7px;
+  }
+
+  .advantages__item svg {
+    fill: #00b2ff;
+    margin-bottom: 10px;
+  }
+
   .advantages__item {
     padding: 40px 45px 28px 40px;
   }
@@ -1506,20 +1516,6 @@ button,
 
   .advantages__item--short-card h3 {
     margin-bottom: 6px;
-  }
-
-  .advantages__item svg {
-    fill: #00b2ff;
-    margin-bottom: 10px;
-  }
-
-  .advantages__item h3 {
-    margin-bottom: 7px;
-  }
-
-  .advantages__item p {
-    margin: 0;
-    line-height: 22px;
   }
 
   .about-company__container {
@@ -1720,11 +1716,7 @@ button,
 
   .navigation-footer__wrapper h2 {
     margin: 0;
-    margin-bottom: 23px;
-  }
-
-  .navigation-footer__wrapper h2 {
-    margin-bottom: 21px;
+    margin-bottom: 24px;
   }
 
   .navigation-footer__wrapper ul {
@@ -1746,7 +1738,7 @@ button,
 
   .contacts__wrapper h2 {
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
   }
 
   .contacts__item {
@@ -1872,7 +1864,7 @@ button,
     position: relative;
     width: 100%;
     padding: 10px 30px;
-    max-width: 270px;
+    max-width: 742px;
   }
 
   .main-page__container span {
@@ -1911,6 +1903,22 @@ button,
     row-gap: 0;
   }
 
+  .advantages__item p {
+    font-size: 14px;
+    line-height: 135%;
+    min-height: 190px;
+  }
+
+  .advantages__item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .advantages__item svg {
+    width: 30px;
+    height: 30px;
+  }
+
   .advantages__item {
     padding: 30px 25px 35px;
     margin-bottom: 27px;
@@ -1945,22 +1953,6 @@ button,
     margin-bottom: 0;
   }
 
-  .advantages__item svg {
-    width: 30px;
-    height: 30px;
-  }
-
-  .advantages__item h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .advantages__item p {
-    font-size: 14px;
-    line-height: 135%;
-    min-height: 190px;
-  }
-
   .about-company__container {
     width: 84%;
     padding-left: 0;
@@ -1993,8 +1985,9 @@ button,
     font-size: 14px;
     line-height: 16px;
     padding: 8px 15px 10px;
-    width: 160px;
+    width: 50%;
     margin-top: -6px;
+    min-width: 160px;
   }
 
   .about-company__text {
@@ -2179,6 +2172,10 @@ button,
     background-color: transparent;
   }
 
+  .navigation-footer__wrapper h2 {
+    margin-bottom: 21px;
+  }
+
   .navigation-footer__wrapper a {
     font-size: 14px;
     line-height: 135%;
@@ -2213,16 +2210,21 @@ button,
   }
 
   .contacts__wrapper {
-    padding-top: 22px;
+    padding-top: 23px;
     padding-bottom: 9px;
     margin-right: 0;
   }
 
   .contacts__wrapper h2 {
-    margin-bottom: 17px;
+    margin-bottom: 16px;
   }
 
   .contacts__item {
+    margin-bottom: 11px;
+  }
+
+  .contacts__item:last-child {
+    margin-top: -3px;
     margin-bottom: 8px;
   }
 
@@ -2247,7 +2249,7 @@ button,
     border: none;
     cursor: pointer;
     width: 87%;
-    height: 15px;
+    height: 30px;
   }
 
   .accordion::before,
@@ -2274,6 +2276,10 @@ button,
   }
 
   .accordion__list {
+    display: block;
+  }
+
+  .accordion__list--closed {
     display: none;
   }
 }

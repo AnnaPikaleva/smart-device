@@ -1,8 +1,8 @@
 const accordions = document.querySelectorAll('.accordion');
 const accList = document.querySelectorAll('.accordion__list');
-// const accordion = document.querySelector('.accordion');
 
-document.querySelector('.no-js').classList.remove('no-js');
+// document.querySelector('.no-js').classList.remove('no-js');
+accList.forEach((accItem) => accItem.classList.add('accordion__list--closed'));
 
 function openList() {
   accordions.forEach((element) => {

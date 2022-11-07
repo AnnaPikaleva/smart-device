@@ -1,11 +1,10 @@
 .accordion {
   @media (max-width: $vp-767) {
-    // padding: 15px 70px 15px 70px;
     position: relative;
     border: none;
     cursor: pointer;
     width: 87%;
-    height: 15px;
+    height: 30px;
 
     &::before,
     &::after {
@@ -40,6 +39,12 @@
   }
 
   @media (max-width: $vp-767) {
-    display: none;
+    display: block;
+  }
+
+  @media (max-width: $vp-767) {
+    &--closed {
+      display: none;
+    }
   }
 }
