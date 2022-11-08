@@ -62,7 +62,7 @@
   font-style: normal;
 }
 
-.contacts__item {
+.contacts__list li {
   margin-bottom: 10px;
 
   @media (max-width: $vp-1023) {
@@ -70,16 +70,15 @@
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
 
-    &:last-child {
-      margin-top: -3px;
-      margin-bottom: 8px;
+    &:first-child {
+      margin-bottom: 15px;
     }
   }
 }
 
-.contacts__item a {
+.contacts__list a {
   color: $color-default-white-opacity;
 
   &:hover {

@@ -31,7 +31,7 @@
   margin: 0;
 }
 
-.footer__social-wrapper {
+.footer__social {
   @media (max-width: $vp-1220) {
     width: auto;
   }
@@ -54,11 +54,11 @@
   }
 }
 
-.footer__social-wrapper a {
+.footer__social a {
   display: inline-block;
 }
 
-.footer__social-wrapper img {
+.footer__social img {
   margin-bottom: 31px;
   margin-left: -4px;
 

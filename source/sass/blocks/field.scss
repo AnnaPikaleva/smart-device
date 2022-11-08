@@ -19,9 +19,21 @@
   }
 }
 
-.field input[type="text"],
+.field input[type="text"] {
+  &:hover {
+    outline: 2px solid $color-default-white;
+  }
+
+  &:focus {
+    outline: 2px solid $color-default-white;
+  }
+}
+
 .field input[type="tel"] {
-  &:hover,
+  &:hover {
+    outline: 2px solid $color-default-white;
+  }
+
   &:focus {
     outline: 2px solid $color-default-white;
   }
@@ -68,6 +80,9 @@
   box-sizing: border-box;
   text-align: center;
   user-select: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
 
   &:hover {
     color: $color-light-blue;

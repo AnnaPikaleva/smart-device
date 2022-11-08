@@ -11,31 +11,5 @@
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 3px;
-
-  // &:hover,
-  // &:focus {
-  //   background-color: @hover-btn-background;
-  //   outline: none;
-  // }
-
-  // &:active {
-  //   background-color: @active-btn-background;
-  // }
-
-  // &:disabled,
-  // &--disabled {
-  //   background-color: @light-font-color;
-  // }
-
-  // &--disabled {
-  //   &:hover,
-  //   &:focus,
-  //   &:active {
-  //     background-color: @light-font-color;
-  //   }
-  // }
-
-  // @media (min-width: @tablet-width) {
-  //   font-size: 20px;
-  // }
+  vertical-align: middle;
 }

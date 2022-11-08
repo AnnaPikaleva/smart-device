@@ -1,4 +1,4 @@
-.accordion {
+.accordion__button {
   @media (max-width: $vp-767) {
     position: relative;
     border: none;
@@ -23,7 +23,7 @@
   }
 }
 
-.accordion.active {
+.accordion__button.active {
   @media (max-width: $vp-767) {
     &::after {
       transform: rotate(0deg);

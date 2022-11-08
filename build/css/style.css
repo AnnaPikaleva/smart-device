@@ -140,7 +140,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  /* stylelint-disable-next-line */
 }
 
 .wrapper .header,
@@ -184,13 +183,6 @@ button,
   display: none;
 }
 
-.no-transition {
-  /* stylelint-disable-next-line */
-  -webkit-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
-
 .button {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -205,6 +197,7 @@ button,
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 3px;
+  vertical-align: middle;
 }
 
 .modal {
@@ -565,20 +558,14 @@ button,
 }
 
 .about-company__container {
-  position: relative;
-  width: 64%;
-  margin: 0 auto;
-  padding: 60px 0 122px 255px;
-}
-
-.about-company__container::after {
-  content: "";
-  background-image: url("../../img/2022.png");
-  width: 150px;
-  height: 320px;
-  position: absolute;
-  top: 60px;
-  left: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 60px 350px 97px;
+  gap: 100px;
 }
 
 .about-company__container h2 {
@@ -858,11 +845,11 @@ button,
   margin: 0;
 }
 
-.footer__social-wrapper a {
+.footer__social a {
   display: inline-block;
 }
 
-.footer__social-wrapper img {
+.footer__social img {
   margin-bottom: 31px;
   margin-left: -4px;
 }
@@ -982,19 +969,19 @@ button,
   font-style: normal;
 }
 
-.contacts__item {
+.contacts__list li {
   margin-bottom: 10px;
 }
 
-.contacts__item a {
+.contacts__list a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.contacts__item a:hover {
+.contacts__list a:hover {
   color: #00b2ff;
 }
 
-.contacts__item a:focus {
+.contacts__list a:focus {
   color: #00b2ff;
 }
 
@@ -1092,9 +1079,18 @@ button,
   opacity: 0.8;
 }
 
-.field input[type=text]:hover,
-.field input[type=text]:focus,
-.field input[type=tel]:hover,
+.field input[type=text]:hover {
+  outline: 2px solid #ffffff;
+}
+
+.field input[type=text]:focus {
+  outline: 2px solid #ffffff;
+}
+
+.field input[type=tel]:hover {
+  outline: 2px solid #ffffff;
+}
+
 .field input[type=tel]:focus {
   outline: 2px solid #ffffff;
 }
@@ -1177,6 +1173,9 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 .field button:hover {
@@ -1388,7 +1387,8 @@ button,
   }
 
   .about-company__container {
-    width: 87%;
+    padding-left: 80px;
+    padding-right: 90px;
   }
 }
 
@@ -1419,7 +1419,7 @@ button,
     width: 280px;
   }
 
-  .footer__social-wrapper {
+  .footer__social {
     width: auto;
   }
 
@@ -1519,15 +1519,15 @@ button,
   }
 
   .about-company__container {
-    padding: 0;
-    padding-left: 176px;
-    padding-top: 16px;
-    margin-bottom: 81px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 16px 50px 81px 47px;
+    gap: 29px;
   }
 
-  .about-company__container::after {
-    top: 20px;
-    left: -3px;
+  .about-company__img {
+    margin-top: 7px;
   }
 
   .about-company__container h2 {
@@ -1643,8 +1643,8 @@ button,
   }
 
   .feedback-form__container button {
-    width: 82%;
-    padding: 15px 25px 13px;
+    width: 83%;
+    padding: 15px 26px 12px;
   }
 
   .feedback-form__field .field__checkbox {
@@ -1671,7 +1671,7 @@ button,
     padding: 50px 50px;
   }
 
-  .footer__social-wrapper {
+  .footer__social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1685,7 +1685,7 @@ button,
     max-width: 100%;
   }
 
-  .footer__social-wrapper img {
+  .footer__social img {
     margin-left: 0;
     margin-bottom: 0;
   }
@@ -1741,7 +1741,7 @@ button,
     margin-bottom: 24px;
   }
 
-  .contacts__item {
+  .contacts__list li {
     margin-bottom: 9px;
   }
 
@@ -1954,13 +1954,10 @@ button,
   }
 
   .about-company__container {
-    width: 84%;
-    padding-left: 0;
-    padding-top: 28px;
-    margin-bottom: 80px;
+    padding: 28px 25px 79px;
   }
 
-  .about-company__container::after {
+  .about-company__img {
     display: none;
   }
 
@@ -1986,7 +1983,7 @@ button,
     line-height: 16px;
     padding: 8px 15px 10px;
     width: 50%;
-    margin-top: -6px;
+    margin-top: -7px;
     min-width: 160px;
   }
 
@@ -2039,7 +2036,7 @@ button,
   }
 
   .feedback-form__container {
-    padding: 46px 25px 88px;
+    padding: 49px 25px 86px;
   }
 
   .feedback-form__box {
@@ -2106,7 +2103,7 @@ button,
     padding: 36px 0 35px;
   }
 
-  .footer__social-wrapper {
+  .footer__social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2121,7 +2118,7 @@ button,
     padding-bottom: 23px;
   }
 
-  .footer__social-wrapper img {
+  .footer__social img {
     margin-bottom: 18px;
     margin-left: -4px;
   }
@@ -2219,16 +2216,15 @@ button,
     margin-bottom: 16px;
   }
 
-  .contacts__item {
-    margin-bottom: 11px;
+  .contacts__list li {
+    margin-bottom: 10px;
   }
 
-  .contacts__item:last-child {
-    margin-top: -3px;
-    margin-bottom: 8px;
+  .contacts__list li:first-child {
+    margin-bottom: 15px;
   }
 
-  .contacts__item a {
+  .contacts__list a {
     font-size: 14px;
   }
 
@@ -2244,7 +2240,7 @@ button,
     flex-wrap: nowrap;
   }
 
-  .accordion {
+  .accordion__button {
     position: relative;
     border: none;
     cursor: pointer;
@@ -2252,8 +2248,8 @@ button,
     height: 30px;
   }
 
-  .accordion::before,
-  .accordion::after {
+  .accordion__button::before,
+  .accordion__button::after {
     content: "";
     width: 15px;
     height: 1px;
@@ -2263,13 +2259,13 @@ button,
     top: 8px;
   }
 
-  .accordion::after {
+  .accordion__button::after {
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
   }
 
-  .accordion.active::after {
+  .accordion__button.active::after {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);

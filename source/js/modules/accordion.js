@@ -1,7 +1,7 @@
-const accordions = document.querySelectorAll('.accordion');
-const accList = document.querySelectorAll('.accordion__list');
+const accordions = document.querySelectorAll('.accordion__button');
+const accordionList = document.querySelectorAll('.accordion__list');
 
-accList.forEach((accItem) => accItem.classList.add('accordion__list--closed'));
+accordionList.forEach((accordionItem) => accordionItem.classList.add('accordion__list--closed'));
 
 function openList() {
   accordions.forEach((element) => {
@@ -17,7 +17,7 @@ function clickOnButton(element) {
     return;
   }
 
-  accList.forEach((item) => {
+  accordionList.forEach((item) => {
     item.style.display = 'none';
   });
 
