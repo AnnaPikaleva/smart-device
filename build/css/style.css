@@ -402,6 +402,7 @@ button,
   border: 1px solid #f2f5f7;
   padding: 10px 16px;
   display: inline-block;
+  vertical-align: middle;
   margin-top: 6px;
   justify-self: flex-end;
   margin-left: auto;
@@ -847,6 +848,7 @@ button,
 
 .footer__social a {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .footer__social img {
@@ -1079,19 +1081,11 @@ button,
   opacity: 0.8;
 }
 
-.field input[type=text]:hover {
+.field input:hover {
   outline: 2px solid #ffffff;
 }
 
-.field input[type=text]:focus {
-  outline: 2px solid #ffffff;
-}
-
-.field input[type=tel]:hover {
-  outline: 2px solid #ffffff;
-}
-
-.field input[type=tel]:focus {
+.field input:focus {
   outline: 2px solid #ffffff;
 }
 

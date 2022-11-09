@@ -60,7 +60,7 @@ const removeValidation = function () {
 
 const checkPhoneMatch = function () {
   if (!reg.test(phone.value)) {
-    let error = generateError('Формат +7(000)000-00-00');
+    let error = generateError('Формат +7 (000) 000-00-00');
     phone.parentElement.insertBefore(error, phone);
     return false;
   } else {

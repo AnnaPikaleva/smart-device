@@ -19,17 +19,7 @@
   }
 }
 
-.field input[type="text"] {
-  &:hover {
-    outline: 2px solid $color-default-white;
-  }
-
-  &:focus {
-    outline: 2px solid $color-default-white;
-  }
-}
-
-.field input[type="tel"] {
+.field input {
   &:hover {
     outline: 2px solid $color-default-white;
   }

@@ -119,7 +119,7 @@ export class Modals {
     if (this.stopPlay) {
       modal.querySelectorAll('video, audio').forEach((el) => el.pause());
       modal.querySelectorAll('[data-iframe]').forEach((el) => {
-        el.querySelector('iframe').contentWindow.postMessage('{"event": "command", "func": "pauseVideo", "args": ""}', '*');
+        el.querySelector('iframe').contentWindow.postMessage('{`event`: `command`, `func`: `pauseVideo`, `args`: ``}', '*');
       });
     }
   }
@@ -128,13 +128,13 @@ export class Modals {
     modal.querySelectorAll('[data-iframe]').forEach((el) => {
       const autoPlay = el.closest('[data-auto-play]');
       if (autoPlay) {
-        el.querySelector('iframe').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        el.querySelector('iframe').contentWindow.postMessage('{`event`:`command`,`func`:`playVideo`,`args`:``}', '*');
       }
     });
   }
 
   open(modalName = this.modalName) {
-    const modal = document.querySelector(`[data-modal="${modalName}"]`);
+    const modal = document.querySelector(`[data-modal='${modalName}']`);
 
     if (!modal || modal.classList.contains('is-active')) {
       return;
@@ -172,7 +172,7 @@ export class Modals {
   }
 
   close(modalName = this.modalName) {
-    const modal = document.querySelector(`[data-modal="${modalName}"]`);
+    const modal = document.querySelector(`[data-modal='${modalName}']`);
     document.removeEventListener('click', this.documentClickHandler);
 
     if (!modal || !modal.classList.contains('is-active')) {
