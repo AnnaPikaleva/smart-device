@@ -2,7 +2,7 @@
   font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptmono-regular.woff2") format("woff2"), url("../fonts/ptmono-regular.woff") format("woff");
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/robotocondensed-regular.woff2") format("woff2"), url("../fonts/robotocondensed-regular.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/robotocondensed-bold.woff2") format("woff2"), url("../fonts/robotocondensed-bold.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -423,9 +423,9 @@ button,
 .main-page__intro {
   color: #f2f5f7;
   background-color: #041827;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background-intro.png");
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-intro.png");
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-intro.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-intro.png");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-intro.png");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-intro.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 880px;
@@ -680,7 +680,7 @@ button,
   position: relative;
   width: 28%;
   min-height: 650px;
-  background-image: url("../../img/bacground-card-1.png");
+  background-image: url("../img/bacground-card-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-sizing: border-box;
@@ -697,7 +697,7 @@ button,
   height: 60px;
   background-color: #00b2ff;
   border-radius: 3px 0 0 0;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 4px 8px;
@@ -1039,6 +1039,7 @@ button,
   color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .field input::-webkit-input-placeholder {
@@ -1102,6 +1103,7 @@ button,
   color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .field textarea::-webkit-input-placeholder {
@@ -1210,6 +1212,7 @@ button,
   background-color: #00b2ff;
   border: 1px solid #ffffff;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .field__control-mark:hover,
@@ -1260,27 +1263,27 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
   .products__item {
-    background-image: url("../../img/bacground-card-1@2x.png");
+    background-image: url("../img/bacground-card-1@2x.png");
   }
 
   .products__item--card2 {
-    background-image: url("../../img/bacground-card-2@2x.png");
+    background-image: url("../img/bacground-card-2@2x.png");
   }
 
   .products__item--card3 {
-    background-image: url("../../img/bacground-card-3@2x.png");
+    background-image: url("../img/bacground-card-3@2x.png");
   }
 }
 
 @media (min-width: 1024px) {
   .products__item--card2 {
-    background-image: url("../../img/bacground-card-2.png");
+    background-image: url("../img/bacground-card-2.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .products__item--card3 {
-    background-image: url("../../img/bacground-card-3.png");
+    background-image: url("../img/bacground-card-3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1529,15 +1532,15 @@ button,
     width: 100%;
     min-height: 250px;
     padding: 37px 90px 37px 45px;
-    background-image: url("../../img/background-card-1-tablet.png");
+    background-image: url("../img/background-card-1-tablet.png");
   }
 
   .products__item--card2 {
-    background-image: url("../../img/background-card-2-tablet.png");
+    background-image: url("../img/background-card-2-tablet.png");
   }
 
   .products__item--card3 {
-    background-image: url("../../img/background-card-3-tablet.png");
+    background-image: url("../img/background-card-3-tablet.png");
   }
 
   .products__item::before {
@@ -1754,15 +1757,15 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .products__item {
-    background-image: url("../../img/background-card-1-tablet@2x.png");
+    background-image: url("../img/background-card-1-tablet@2x.png");
   }
 
   .products__item--card2 {
-    background-image: url("../../img/background-card-2-tablet@2x.png");
+    background-image: url("../img/background-card-2-tablet@2x.png");
   }
 
   .products__item--card3 {
-    background-image: url("../../img/background-card-3-tablet@2x.png");
+    background-image: url("../img/background-card-3-tablet@2x.png");
   }
 }
 
@@ -1967,15 +1970,15 @@ button,
   .products__item {
     letter-spacing: -0.05em;
     padding: 25px 28px;
-    background-image: url("../../img/background-card1-mobile.png");
+    background-image: url("../img/background-card1-mobile.png");
   }
 
   .products__item--card2 {
-    background-image: url("../../img/background-card2-mobile.png");
+    background-image: url("../img/background-card2-mobile.png");
   }
 
   .products__item--card3 {
-    background-image: url("../../img/background-card3-mobile@2x.png");
+    background-image: url("../img/background-card3-mobile@2x.png");
   }
 
   .products__item::before {
@@ -2155,8 +2158,6 @@ button,
     top: 21px;
     right: 25px;
     background-color: transparent;
-    width: 15px;
-    height: 15px;
   }
 
   .contacts__wrapper {
@@ -2235,22 +2236,22 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .products__item {
-    background-image: url("../../img/background-card1-mobile@2x.png");
+    background-image: url("../img/background-card1-mobile@2x.png");
   }
 
   .products__item--card2 {
-    background-image: url("../../img/background-card2-mobile@2x.png");
+    background-image: url("../img/background-card2-mobile@2x.png");
   }
 
   .products__item--card3 {
-    background-image: url("../../img/background-card3-mobile@2x.png");
+    background-image: url("../img/background-card3-mobile@2x.png");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .main-page__intro {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background-intro@2x.png");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-intro@2x.png");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-intro@2x.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-intro@2x.png");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-intro@2x.png");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-intro@2x.png");
   }
 }

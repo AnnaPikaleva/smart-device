@@ -9,6 +9,7 @@
   color: $color-default-white;
   font-family: $ff-ptmono;
   font-size: 16px;
+  cursor: pointer;
 
   &::placeholder {
     font-family: $ff-ptmono;
@@ -41,6 +42,7 @@
   color: $color-default-white;
   font-family: $ff-ptmono;
   font-size: 16px;
+  cursor: pointer;
 
   &::placeholder {
     font-family: $ff-ptmono;
@@ -109,6 +111,7 @@
   background-color: $color-light-blue;
   border: 1px solid $color-default-white;
   border-radius: 2px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
