@@ -979,6 +979,10 @@ button,
   margin: 0;
 }
 
+.main-nav {
+  max-width: 500px;
+}
+
 .main-nav__list {
   list-style: none;
   padding: 0;
@@ -2221,7 +2225,7 @@ button,
     margin-right: 9px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    max-width: 120px;
+    max-width: 220px;
     margin-top: 5px;
   }
 
